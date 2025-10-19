@@ -6,18 +6,23 @@ import { Footer } from './components/Footer';
 
 function App() {
   return (
-    // The main container is now the root element. No extra divs needed.
-    // The 'relative' class is no longer necessary here but doesn't hurt.
-    <div>
-      <Navbar />
-      <main>
-        <Hero />
-        <AdminFeatures />
-        <CandidateExperience />
-        <FinalCTA />
-      </main>
-      <Footer />
-    </div>
+    <>
+      {/* These divs create the fixed background effects */}
+      <div className="animated-background" />
+      <div className="particles" /> 
+
+      {/* Main content */}
+      <div className="relative z-10">
+        <Navbar />
+        <main>
+          <Hero />
+          <AdminFeatures />
+          <CandidateExperience />
+          <FinalCTA />
+        </main>
+        <Footer />
+      </div>
+    </>
   )
 }
 
