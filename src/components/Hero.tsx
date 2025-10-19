@@ -27,12 +27,18 @@ export const Hero = () => {
           A secure, AI-powered, and flawlessly stable platform for high-stakes testing. Built for administrators who demand excellence and candidates who deserve a fair chance.
         </motion.p>
         <motion.div variants={item} className="flex justify-center gap-4">
-          <button className="bg-gradient-to-r from-purple-500 to-teal-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition-transform">
+          <a
+            href="#get-started"
+            className="bg-gradient-to-r from-purple-500 to-teal-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition-transform"
+          >
             Get Started for Free
-          </button>
-          <button className="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-white hover:text-[#0a192f] transition-colors flex items-center gap-2">
+          </a>
+          <a
+            href="#features"
+            className="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-white hover:text-[#0a192f] transition-colors flex items-center gap-2"
+          >
             See How It Works <FiArrowDown />
-          </button>
+          </a>
         </motion.div>
       </motion.div>
     </section>

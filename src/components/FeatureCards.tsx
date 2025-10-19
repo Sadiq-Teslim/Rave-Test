@@ -28,6 +28,7 @@ const MotionCard = ({ icon, title, children }: { icon: React.ReactNode, title: s
 export const AdminFeatures = () => (
   <motion.section
     initial="offscreen"
+    id="features"
     whileInView="onscreen"
     viewport={{ once: true, amount: 0.3 }}
     className="py-20 px-4"
