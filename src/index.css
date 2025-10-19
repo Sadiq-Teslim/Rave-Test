@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* Base body styles */
+body {
+  background-color: #0a192f;
+  @apply text-gray-200 font-sans;
+  overflow-x: hidden; /* Keep this to prevent horizontal scrollbars */
+}
+
+/* Live Animated Background */
+.animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  /* Using hex codes directly in the gradient */
+  background: linear-gradient(250deg, #0a192f, #4a148c, #004d40, #0a192f);
+  background-size: 400% 400%;
+  animation: gradientAnimation 25s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Subtle glowing particles effect */
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+  animation: particleFloat 40s linear infinite;
+  z-index: -1;
+}
+
+@keyframes particleFloat {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-1000px); }
+}
